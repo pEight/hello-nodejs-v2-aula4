@@ -1,0 +1,24 @@
+{
+  "name": "dogge-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.12.6",
+    "sqlite3": "^3.1.8"
+  },
+  "scripts": {
+    "init": "knex init",
+    "knex:migrate": "knex migrate:make cachorro_inicial",
+    "knex:migratecolumn": "knex migrate:make adiciona_marca_cachorro",
+    "knex:migrate:add:dog": "knex migrate:make adiciona_dogge",
+    "knex:migrate:latest": "knex migrate:latest",
+    "knex:rollback": "knex migrate:rollback"
+  }
+}
